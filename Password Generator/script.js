@@ -19,7 +19,7 @@ let password = "";
 let passwordLength = 10;
 let checkCount = 0;
 handleSlider();
-//ste strength circle color to grey
+
 
 
 //set passwordLength
@@ -31,7 +31,7 @@ function handleSlider() {
 
 function setIndicator(color) {
     indicator.style.backgroundColor = color;
-    //shadow - HW
+
 }
 
 function getRndInteger(min, max) {
@@ -86,7 +86,7 @@ async function copyContent() {
     catch(e) {
         copyMsg.innerText = "Failed";
     }
-    //to make copy wala span visible
+
     copyMsg.classList.add("active");
 
     setTimeout( () => {
@@ -139,7 +139,7 @@ copyBtn.addEventListener('click', () => {
 })
 
 generateBtn.addEventListener('click', () => {
-    //none of the checkbox are selected
+
 
     if(checkCount == 0) 
         return;
@@ -154,23 +154,7 @@ generateBtn.addEventListener('click', () => {
     //remove old password
     password = "";
 
-    //let's put the stuff mentioned by checkboxes
 
-    // if(uppercaseCheck.checked) {
-    //     password += generateUpperCase();
-    // }
-
-    // if(lowercaseCheck.checked) {
-    //     password += generateLowerCase();
-    // }
-
-    // if(numbersCheck.checked) {
-    //     password += generateRandomNumber();
-    // }
-
-    // if(symbolsCheck.checked) {
-    //     password += generateSymbol();
-    // }
 
     let funcArr = [];
 
